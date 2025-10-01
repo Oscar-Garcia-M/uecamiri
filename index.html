@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.E. CAMIRI - Responsive</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- ========== HEADER & NAVIGATION ========== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <a href="#inicio" class="text-xl sm:text-2xl font-bold text-red-600">UNIDAD EDUCATIVA <span class="text-gray-700">CAMIRI</span></a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#inicio" class="text-gray-600 hover:text-red-600 transition duration-300">INICIO</a>
+                <a href="#nosotros" class="text-gray-600 hover:text-red-600 transition duration-300">NOSOTROS</a>
+                <a href="#actividades" class="text-gray-600 hover:text-red-600 transition duration-300">ACTIVIDADES</a>
+                <a href="#docentes" class="text-gray-600 hover:text-red-600 transition duration-300">DOCENTES</a>
+                <a href="#galeria" class="text-gray-600 hover:text-red-600 transition duration-300">GALERÍA</a>
+                <a href="#ubicacion" class="text-gray-600 hover:text-red-600 transition duration-300">UBICACIÓN</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#inicio" class="block py-3 px-6 text-sm text-gray-600 hover:bg-red-50 hover:text-red-600">INICIO</a>
+            <a href="#nosotros" class="block py-3 px-6 text-sm text-gray-600 hover:bg-red-50 hover:text-red-600">NOSOTROS</a>
+            <a href="#actividades" class="block py-3 px-6 text-sm text-gray-600 hover:bg-red-50 hover:text-red-600">ACTIVIDADES</a>
+            <a href="#docentes" class="block py-3 px-6 text-sm text-gray-600 hover:bg-red-50 hover:text-red-600">DOCENTES</a>
+            <a href="#galeria" class="block py-3 px-6 text-sm text-gray-600 hover:bg-red-50 hover:text-red-600">GALERÍA</a>
+            <a href="#ubicacion" class="block py-3 px-6 text-sm text-gray-600 hover:bg-red-50 hover:text-red-600">UBICACIÓN</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== INICIO (HERO SECTION) ========== -->
+        <section id="inicio" class="hero-section text-white h-[70vh] md:h-[80vh] flex items-center justify-center">
+            <div class="container mx-auto px-6 text-center">
+                <img src="img/LOGO SIN FONDO U.E. CAMIRI.png" alt="Logo de la Unidad Educativa Sararenda" class="mx-auto mb-6 w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full shadow-lg">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Unidad Educativa Camiri: La disciplina hace buenas costumbres</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">ORGULLOSO SIEMPRE DE LA UNIDAD EDUCATIVA CAMIRI </p>
+            </div>
+        </section>
+
+        <!-- ========== NOSOTROS ========== -->
+        <section id="nosotros" class="py-16 sm:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">RESEÑA HISTORICA</h2>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="md:w-1/2">
+                        <img src="img/RESEÑA.jpg" alt="Imagen del equipo o instalaciones" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2 text-justify">
+                        <h3 class="text-2xl font-semibold mb-4 text-red-600"></h3>
+                        <p class="mb-ue los egresados sean líderes capaces de contribuir al avance tecnológico y al desarrollo sostenible de la región, transformando desafíos en oportunidades a través de la informática.</p>
+                        <h3 class="text-2xl font-semibold mb-4 text-red-600"></h3>
+                        <p>Por la necesidad de la Juventud que tenían deseos de superación, un primero de mayo de 1963 se inauguró en Camiri un nuevo plantel educativo de nivel secundario con el nombre de “FLORA GALARZA LEÓN” bajo la Dirección de la prestigiosa profesora GLADYS SILES DE ABETH, juntamente con un grupo de docente, muy eficientes con deseos de servir a la juventud camireña, sin importarles las incomodidades por la que tuvieron que pasar, pero siempre en aras de servir a un pueblo ansioso de saber.  
+                            Los maestros fundadores fueron:  
+                            Prof. Gladys Siles de Abeth  
+                            DIRECTORA  
+                            Srta. Stina Villazón Jordán  
+                            SECRETARIA  
+                            Prof. Leny Aguilera, Prof. Betty Cirbian, Prof. Oscar Rodríguez, Prof. Luis Ardaya,  
+                            Prof. Mario Velarde, Prof. Deysi de Orozco, Prof. Ruth Abastofior, Prof. Néstor Chávez, 
+                            Prof. Vita de Santelices, Prof. Mary Flores, Prof. Edith Bustillos.  
+                            Durante los años 1963 y 1964 funcionó en el local de infantes “Graciela de Delgadillo” en el año 1965 hasta 1972 en el Colegio “Gabriel René Moreno”, hoy escuela 27 de mayo; desde 1973 hasta julio de 2007 funcionó en el núcleo Gabriel René Moreno; actualmente se encuentra ocupando una nueva infraestructura propia construida por el Gobierno Municipal de Camiri en los predios de ex YPFB. Posteriormente en 1981 bajo la Dirección de la Señora Profesora Judith Durán de Pinto, se realizaron los trámites pertinentes para cambiar el nombre de FLORA GALARZA LEÓN por el de LICEO DE SEÑORITAS CAMIRI en honor a la capital petrolera, el cual actualmente ostenta con orgullo, 
+                            El Colegio ha tenido los siguientes Directores:  
+                            Prof. Gladys Siles de Abeth  
+                            Prof. Judith Durán de Pinto  
+                            Prof. Angélica de Montesinos  
+                            Prof. Franklin Acarapi  
+                            Lic. Miriam Lindaura Auza Ofia  
+                            MSc. Víctor Quispe Flores  
+                            En el año 1997 al aplicar la Reforma Educativa en el país se implantó la educación mixta, recibiendo en nuestras aulas estudiantes varones; como consecuencia de esto se cambió el nombre por el UNIDAD EDUCATIVA “CAMIRI”.  
+                            En la actualidad cuenta con 17 cursos y 507 estudiantes efectivos, de los cuales 263 son estudiantes varones y 244 son estudiantes mujeres. 
+                            Desde julio de la gestión 2007 la Unidad Educativa cuenta con una nueva infraestructura cómoda con todos los ambientes requeridos.  
+                            El establecimiento cuenta con una Biblioteca propia lo cual crece cada gestión en la adquisición de material bibliográfico con recursos propios. Así mismo cuenta con una Banda de Música que participa en los desfiles escolares.  El primero de mayo nuestro establecimiento cumplió 61 años en bien de la juventud estudiosa de Camiri bajo el lema.  
+                             </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ACTIVIDADES CURRICULARES ========== -->
+        <section id="actividades" class="py-16 sm:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">Actividades Curriculares</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Cards de Actividades -->
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/EDUCACION F.jpg" class="w-full h-48 object-cover" alt="Actividad de Programación">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">EDUCACION FISICA </h3>
+                            <p class="text-gray-600">En la materia de Educación Física desarrollamos actividades orientadas al deporte y la recreación. A través de juegos, ejercicios y prácticas deportivas, fortalecemos nuestro cuerpo, aprendemos a trabajar en equipo, mejoramos la salud y fomentamos valores como la disciplina, el respeto y la solidaridad.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/MATE (1).jpg" class="w-full h-48 object-cover" alt="Actividad de Redes">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">MATEMATICAS </h3>
+                            <p class="text-gray-600">En la materia de Matemáticas desarrollamos habilidades para el razonamiento lógico y la resolución de problemas. A través del estudio de números, operaciones, geometría y álgebra, fortalecemos nuestra capacidad de análisis, comprensión y aplicación de conocimientos en la vida diaria.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/FISICA.jpg" class="w-full h-48 object-cover" alt="Actividad de Base de Datos">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">FISICA </h3>
+                            <p class="text-gray-600">En la materia de Física estudiamos los fenómenos naturales que ocurren en nuestro entorno, como el movimiento, la energía, la materia y sus interacciones. A través de experimentos y ejercicios prácticos, desarrollamos el pensamiento científico, la observación y la aplicación de leyes que explican el funcionamiento del mundo que nos rodea.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/QUIMICA.jpg" class="w-full h-48 object-cover" alt="Actividad de Soporte Técnico">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">QUIMICA</h3>
+                            <p class="text-gray-600">En la materia de Química analizamos la composición, estructura y transformación de la materia. A través de experimentos y teorías, aprendemos cómo interactúan las sustancias, cómo se producen los cambios químicos y de qué manera estos conocimientos pueden aplicarse en la vida cotidiana.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/SOCIALES.jpg" class="w-full h-48 object-cover" alt="Actividad de Diseño Web">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">CIENCIAS SOCIALES</h3>
+                            <p class="text-gray-600">n la materia de Ciencias Sociales estudiamos la historia, la geografía y la organización de las sociedades. A través de este aprendizaje comprendemos nuestra identidad, valoramos la diversidad cultural y la importancia de participar de manera responsable en la comunidad y en el país.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/BIOLOGIA.jpg" class="w-full h-48 object-cover" alt="Actividad de Seguridad Informática">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">BIOLOGIA </h3>
+                            <p class="text-gray-600">En la materia de Biología estudiamos a los seres vivos, su estructura, funciones, evolución y la relación que tienen con el ambiente. A través de la observación y la investigación aprendemos a valorar la vida, a comprender los procesos naturales.</p>
+                        </div>
+
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/ARTES PLASTICAS.jpg" class="w-full h-48 object-cover" alt="Actividad de Soporte Técnico">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">ARTES PLASTICAS</h3>
+                            <p class="text-gray-600">En la materia de Artes Plásticas exploramos nuestra creatividad a través de diferentes técnicas y materiales, como el dibujo, la pintura, la escultura y la ilustración. Aprendemos a expresar ideas, emociones e identidad cultural, desarrollando la sensibilidad artística y el pensamiento creativo.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/MUSICA.jpg" class="w-full h-48 object-cover" alt="Actividad de Diseño Web">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">MUSICA</h3>
+                            <p class="text-gray-600">En la materia de Música desarrollamos habilidades para escuchar, interpretar y crear sonidos. A través del canto, instrumentos y ritmos aprendemos a expresar emociones, valorar la cultura musical y fomentar la creatividad y el trabajo en equipo.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/LENGUAJE (2).jpg" class="w-full h-48 object-cover" alt="Actividad de Seguridad Informática">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">LENGUAJE  </h3>
+                            <p class="text-gray-600">"En la materia de Lenguaje aprendemos a comprender, interpretar y producir textos escritos y orales. Desarrollamos la comunicación efectiva, el pensamiento crítico y la capacidad de expresarnos con claridad, además de valorar la literatura y la cultura.".</p>
+                        </div>
+
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/INGLES.jpg" class="w-full h-48 object-cover" alt="Actividad de Soporte Técnico">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">INGLES </h3>
+                            <p class="text-gray-600"> En la materia de Inglés desarrollamos la comprensión y expresión en otro idioma, tanto oral como escrita. Aprendemos vocabulario, gramática y comunicación práctica, fortaleciendo habilidades para interactuar con personas de otros países y ampliar nuestras oportunidades académicas y culturales..</p>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/RELIGION.jpg" class="w-full h-48 object-cover" alt="Actividad de Diseño Web">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">RELIGION </h3>
+                            <p class="text-gray-600">En la materia de Religión aprendemos sobre la fe, los valores y las enseñanzas espirituales que nos ayudan a vivir en armonía con los demás. Reflexionamos sobre la ética, la moral y la importancia de respetar las creencias propias y ajenas, fortaleciendo la convivencia y la solidaridad.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="img/FILOSOFIA.jpg" class="w-full h-48 object-cover" alt="Actividad de Seguridad Informática">
+                        <div class="p-6 text-justify">
+                            <h3 class="text-xl font-bold mb-2">FILOSOFIA</h3>
+                            <p class="text-gray-600">En la materia de Filosofía desarrollamos el pensamiento crítico y reflexivo, cuestionando ideas y analizando problemas de la vida, la sociedad y el conocimiento. Aprendemos a razonar, argumentar y tomar decisiones conscientes, fomentando la reflexión sobre la existencia y los valores humanos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+        <!-- ========== PLANTEL DOCENTE Y ADMINISTRATIVO ========== -->
+        <section id="docentes" class="py-16 sm:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">Nuestro Equipo 2025</h2>
+                </div>
+                <!-- Administrativos -->
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-red-600 mb-10">Plantel Administrativo</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center mb-16">
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/DIREC.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-200" alt="Foto del Director">
+                        <h3 class="text-xl font-bold">ELIZABETH SAGARDIA LLANOS.</h3>
+                        <p class="text-blue-600 font-semibold">DIRECTOR</p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/yaly.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-200" alt="Foto del Secretario">
+                        <h3 class="text-xl font-bold">Yaly Mary Sañez</h3>
+                        <p class="text-green-600 font-semibold">SECRETARIA</p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/ada.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-red-200" alt="Foto del Asistente">
+                        <h3 class="text-xl font-bold">Hadda Paredes Herrera </h3>
+                        <p class="text-red-600 font-semibold">REGENTA</p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/carmencita.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-orange-200" alt="Foto de la Portera">
+                        <h3 class="text-xl font-bold">Carmen Hoyos Gutierrez</h3>
+                        <p class="text-orange-600 font-semibold">PORTERA</p>
+                    </div>
+                </div>
+                <!-- Docentes -->
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-red-600 mb-10">Plantel Docente</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <!-- Fila 1 de Docentes -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/NINGO.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Rosario Alba Soliz</h3>
+                        <p class="text-blue-600 font-semibold">MATEMATICAS</p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/ANA LUISA.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Ana Luisa Barrientos Cardozo.</h3>
+                        <p class="text-green-600 font-semibold">MATEMATICAS</p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/EDITH.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-red-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Edith Veizaga Aguilar</h3>
+                        <p class="text-red-600 font-semibold">MATEMATICAS</p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/ABEL.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-orange-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Abel Mamani Muraña</h3>
+                        <p class="text-orange-600 font-semibold">COMUNICACION Y LENGUAJE</p>
+                    </div>
+                    <!-- Fila 2 de Docentes -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/ROXANA.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-cyan-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Roxana Asuncion Claros Cordova</h3>
+                        <p class="text-cyan-600 font-semibold">COMUNICACION Y LENGUAJE</p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/ELDY.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-indigo-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Maria Eldy Auza Oña </h3>
+                        <p class="text-indigo-600 font-semibold">FILOSOFIA Y PSICOLOGIA </p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/ELIANA.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-rose-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Eliana Flores Cespedes</h3>
+                        <p class="text-rose-600 font-semibold">FILOSOFIA Y PSICOLOGIA</p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/JUAN CARLOS.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-lime-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Juan Carlos Ugarte Mostajo</h3>
+                        <p class="text-lime-600 font-semibold">FILOSOFIA Y PSICOLOGIA</p>
+                    </div>
+
+                     <!-- Fila 2 de Docentes -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/MABEL.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-cyan-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Mabel Rivera Barjas </h3>
+                        <p class="text-cyan-600 font-semibold">BIOLOGIA - GEOGRAFIA </p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/matilde.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-indigo-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Matilde Villagomez </h3>
+                        <p class="text-indigo-600 font-semibold">BIOLOGIA - GEOGRAFIA  </p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/AIDE.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-rose-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Aide Quispe Fernandez </h3>
+                        <p class="text-rose-600 font-semibold">QUÍMICA - FÍSICA</p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/MAYAN.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-lime-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Tersa Mayan Echeverria</h3>
+                        <p class="text-lime-600 font-semibold">CIENCIAS SOCIALES</p>
+                    </div>
+
+                     <!-- Fila 2 de Docentes -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/MONICA.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-cyan-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Monica Alejandra Callizaya Vargas </h3>
+                        <p class="text-cyan-600 font-semibold">CIENCIAS SOCIALES </p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/andrea.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-indigo-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Andrea Justiniano </h3>
+                        <p class="text-indigo-600 font-semibold">CIENCIAS SOCIALES </p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/MARTA.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-rose-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Martha Rosado Chavez </h3>
+                        <p class="text-rose-600 font-semibold">LENGUA EXTRANJERA </p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/OSCAR.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-lime-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Oscar Eloy Torrez Oliva </h3>
+                        <p class="text-lime-600 font-semibold">EDUCACIÓN FÍSICA Y DEPORTE</p>
+                    </div>
+
+                     <!-- Fila 2 de Docentes -->
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/VICTOR.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-cyan-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Victor Hugo Ferrufino</h3>
+                        <p class="text-cyan-600 font-semibold">TECNICA TECNOLOGICA </p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/MARIANA.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-indigo-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Maria Mamani Lopez </h3>
+                        <p class="text-indigo-600 font-semibold">EDUCACIÓN MUSICAL </p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/LIDIA.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-rose-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Lidia Peña </h3>
+                        <p class="text-rose-600 font-semibold">VALORES , ESPIRITUALIDADS Y RELIGIONES </p>
+                    </div>
+                    <div class="card p-6 bg-white rounded-lg shadow-lg">
+                        <img src="img/VIVEROS.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-lime-200" alt="Foto del docente">
+                        <h3 class="text-xl font-bold">Fidencias Riveros Vargas </h3>
+                        <p class="text-lime-600 font-semibold">VALORES, ESPIRITUALIDADE Y RELIGIONES </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== GALERÍA DE IMAGENES ========== -->
+        <section id="galeria" class="py-16 sm:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">Galería de Momentos</h2>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img class="h-full w-full object-cover transform hover:scale-110 transition-transform duration-300" src="img/FB_IMG_1754339208883.jpg" alt="Imagen de la galería 1">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img class="h-full w-full object-cover transform hover:scale-110 transition-transform duration-300" src="img/FB_IMG_1754339389499.jpg" alt="Imagen de la galería 2">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img class="h-full w-full object-cover transform hover:scale-110 transition-transform duration-300" src="img/3.jpg" alt="Imagen de la galería 3">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img class="h-full w-full object-cover transform hover:scale-110 transition-transform duration-300" src="img/4.jpg" alt="Imagen de la galería 4">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img class="h-full w-full object-cover transform hover:scale-110 transition-transform duration-300" src="img/EVENTO 5.jpg" alt="Imagen de la galería 5">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img class="h-full w-full object-cover transform hover:scale-110 transition-transform duration-300" src="img/EVENTO 6.jpg" alt="Imagen de la galería 6">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img class="h-full w-full object-cover transform hover:scale-110 transition-transform duration-300" src="img/evento7.jpg" alt="Imagen de la galería 7">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                       <img class="h-full w-full object-cover transform hover:scale-110 transition-transform duration-300" src="img/evento8.jpg" alt="Imagen de la galería 8">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== UBICACIÓN ========== -->
+        <section id="ubicacion" class="py-16 sm:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">Encuéntranos</h2>
+                </div>
+                <div class="max-w-6xl mx-auto bg-white p-8 rounded-lg shadow-2xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                        <!-- Dirección -->
+                        <div class="flex flex-col items-center p-4">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-100 text-red-600 mb-4">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Dirección</h4>
+                            <p class="text-gray-600">Tnte. Coronel sanchez </p>
+                        </div>
+                        <!-- Correo -->
+                        <div class="flex flex-col items-center p-4">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-100 text-red-600 mb-4">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Correo</h4>
+                            <a href="mailto:Bthsararenda@gmail.com" class="text-blue-600 hover:underline break-all">uecamiri@gmail.com</a>
+                        </div>
+                        <!-- Celular -->
+                        <div class="flex flex-col items-center p-4">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-100 text-red-600 mb-4">
+                                <i class="fab fa-whatsapp fa-2x"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Celular</h4>
+                            <a href="https://wa.me/64497082" target="_blank" class="text-blue-600 hover:underline">+591 64497082</a>
+                        </div>
+                        <!-- Horario -->
+                        <div class="flex flex-col items-center p-4">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-100 text-red-600 mb-4">
+                                <i class="fas fa-clock fa-2x"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Horario de Atención</h4>
+                            <p class="text-gray-600">L-V: 08:00-11:30 | 14:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p class="text-lg text-white mb-4">"DISCIPLINA, ESFUERZO Y EXCELENCIA"</p>
+            <p class="mt-4 text-sm">&copy; Copyright.UE CAMIRI - MANUEL Y RUBIN . 2025</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/59164497082?text=Hola,%20quisiera%20más%20información." class="whatsapp-flotante" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Estilos personalizados para la sección hero */
+.hero-section {
+    background-image: url('img/fondo.jpg'); /* Placeholder for hero background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlay oscuro para la sección hero */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
+    z-index: -1;
+}
+
+/* Estilo para los títulos de sección */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* Línea debajo de los títulos de sección */
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #1e22e9; /* Color rojo */
+    border-radius: 2px;
+}
+
+/* --- BOTÓN FLOTANTE DE WHATSAPP --- */
+.whatsapp-flotante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Ajustes de responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh; 
+    }
+    .whatsapp-flotante {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+    /* Cambiar dirección del gradiente en móviles */
+    #nosotros, #actividades, #docentes, #galeria, #ubicacion {
+        background: none; /* Simplificar fondo en móvil o usar gradiente vertical */
+    }
+    #nosotros { background-color: #f3f4f6; }
+    #actividades { background-color: #ffffff; }
+    #docentes { background-color: #f3f4f6; }
+    #galeria { background-color: #ffffff; }
+    #ubicacion { background-color: #f3f4f6; }
+}
+
+@media (min-width: 769px) {
+    /* Estilos de fondo degradado para pantallas grandes */
+    #nosotros { background: linear-gradient(to right, #eef2ff, #dbeafe); }
+    #actividades { background: linear-gradient(to right, #f0fdf4, #dcfce7); }
+    #docentes { background: linear-gradient(to right, #fefce8, #fef9c3); }
+    #galeria { background: linear-gradient(to right, #fff1f2, #ffe4e6); }
+    #ubicacion { background: linear-gradient(to right, #eff6ff, #dbeafe); }
+}
